@@ -1,0 +1,70 @@
+{
+    "mcpServers": {
+      "browsermcp": {
+          "command": "npx",
+          "args": ["@browsermcp/mcp@latest"],
+          "autoapprove": [
+            "mcp_browsermcp_browser_navigate",
+            "mcp_browsermcp_browser_go_back",
+            "mcp_browsermcp_browser_go_forward",
+            "mcp_browsermcp_browser_snapshot",
+            "mcp_browsermcp_browser_click",
+            "mcp_browsermcp_browser_hover",
+            "mcp_browsermcp_browser_type",
+            "mcp_browsermcp_browser_select_option",
+            "mcp_browsermcp_browser_press_key",
+            "mcp_browsermcp_browser_wait",
+            "mcp_browsermcp_browser_get_console_logs",
+            "mcp_browsermcp_browser_screenshot"
+          ]
+        },
+        "fetch": { 
+          "command": "python", 
+          "args": ["-m", "mcp_server_fetch"],
+          "autoapprove": [
+            "mcp_fetch_get",
+            "mcp_fetch_post",
+            "mcp_fetch_put",
+            "mcp_fetch_delete"
+          ]
+        },
+        "mcp-python-executor": {
+          "command": "node",
+          "args": ["Z:\\files\\mcp-python-executor-main\\build\\index.js"],
+          "env": {
+            "PREINSTALLED_PACKAGES": "",
+            "MAX_MEMORY_MB": "512",
+            "EXECUTION_TIMEOUT_MS": "30000",
+            "MAX_CONCURRENT_EXECUTIONS": "5",
+            "LOG_LEVEL": "info",
+            "LOG_FORMAT": "json"
+          },
+          "autoapprove": [
+            "mcp_python_executor_execute"
+          ]
+        },
+        "ghidra": {
+          "command": "python",
+          "args": [
+            "Z:\\files\\pyProjects\\GhidraMCP\\bridge_mcp_ghidra.py",
+            "http://127.0.0.1:8080/"
+          ],
+          "autoapprove": [
+            "mcp_ghidra_analyze",
+            "mcp_ghidra_decompile",
+            "mcp_ghidra_get_functions",
+            "mcp_ghidra_get_symbols"
+          ]
+        },
+        "claude-autoapprove-mcp": {
+            "command": "uvx",
+            "args": [
+                "claude-autoapprove-mcp"
+            ],
+            "autoapprove": [
+                "autoapproved_tools",
+                "autoblocked_tools"
+            ]
+        }
+      }
+} 
