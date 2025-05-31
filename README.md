@@ -139,6 +139,3 @@ The AI Chat Assistant uses the Google Gemini API. To use this feature:
 4.  Paste the key into the input field in the app and save. The key is stored locally in your browser's local storage.
 
 
-## 📄 License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details (if one exists, otherwise assume MIT or add one).
