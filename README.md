@@ -1,6 +1,4 @@
-Okay, this looks like a feature-rich application! Based on the file structure and content, here's a comprehensive README.md for your "Charity Connect" project.
 
-```markdown
 # Charity Connect 🤝
 
 Charity Connect is a full-stack web application designed to connect individuals who need help with those who can offer assistance, and to celebrate successful collaborations as achievements. It features a dynamic feed, user profiles, settings, internationalization (English & Arabic), and an AI-powered chat assistant (using Google Gemini) to help users create posts.
@@ -144,14 +142,3 @@ The AI Chat Assistant uses the Google Gemini API. To use this feature:
 ## 📄 License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details (if one exists, otherwise assume MIT or add one).
-```
-
-**Notes on the README:**
-
-1.  **Placeholders:** I've used `<repository-url>` and `<repository-name>`. You'll need to replace these.
-2.  **Convex Setup:** The Convex setup can sometimes vary slightly based on project initialization. I've provided general steps. Users should refer to the official Convex documentation if they encounter issues.
-3.  **Environment Variables for Auth:** I've noted that `CONVEX_AUTH_PASSWORD_ENABLED` and `CONVEX_AUTH_ANONYMOUS_ENABLED` are typically set in the Convex dashboard's environment variables, not directly in the client-side `.env.local` for security reasons (as they control backend behavior).
-4.  **Gemini API Key:** Clarified that this is an in-app user input, not a build-time environment variable.
-5.  **License:** Added a standard MIT license statement. If you have a specific license, update it.
-
-This README should give anyone a good understanding of your project, how to set it up, and its capabilities.
